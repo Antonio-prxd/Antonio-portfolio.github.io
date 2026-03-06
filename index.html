@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Futur Data Engineer</title>
+    <meta name="description"
+        content="Portfolio de Futur Data Engineer — Découvrez mon parcours, mes projets et contactez-moi." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ───── HEADER / NAV ───── -->
+    <header class="header">
+        <div class="header-inner">
+            <span class="logo">Antonio Balestra<span class="accent">.</span></span>
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="accueil" id="btn-accueil">Accueil</button>
+                <button class="nav-btn" data-tab="projets" id="btn-projets">Projets</button>
+                <button class="nav-btn" data-tab="contact" id="btn-contact">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ───── MAIN CONTENT ───── -->
+    <main class="main">
+
+        <!-- ══════════ TAB : ACCUEIL ══════════ -->
+        <section class="tab active" id="tab-accueil">
+
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-text">
+                    <p class="hero-label">Bonjour, je suis</p>
+                    <h1 class="hero-name">Antonio Balestra</h1>
+                    <h2 class="hero-title">Futur Data Engineer</h2>
+                    <p class="hero-desc">
+                        Passionné par la donnée, je construis des solutions data de bout en bout — de l’ingénierie des
+                        données à l’analyse — afin de transformer des données complexes en insights clairs qui
+                        soutiennent la prise de décision.
+                    </p>
+                    <button class="btn-primary" onclick="switchTab('projets')">Voir mes projets</button>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <img src="images/profile.png" alt="Photo de profil" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parcours -->
+            <div class="section-block">
+                <h3 class="section-title">Mon Parcours</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025 – Présent</span>
+                            <h4>Data Analyst — Formation Wild Code School (Simplon)</h4>
+                            <ul class="timeline-list">
+                                <p> - Data analyse et traitement de données : collecte (SQL, API, web scraping) et
+                                    nettoyage des données avec Python (NumPy, Pandas).</p>
+                                <p> - Analyse et modélisation : Machine Learning (régression, classification,
+                                    clustering)
+                                    avec scikit-learn.</p>
+                                <p> - Data visualisation : création de graphiques et tableaux de bord (Plotly, Power BI,
+                                    Tableau).</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021 – 2025</span>
+                            <h4>Responsable d’activité — La Casa di Papa</h4>
+                            <p>Participation à l’élaboration d’un projet de développement
+                                (restaurant et déploiement de distributeurs automatiques de
+                                pizzas dans la région arrageoise). Structuration et analyse des
+                                données de ventes et de gestion avec Excel afin de produire des
+                                indicateurs de performance fiables, améliorer le suivi financier et
+                                soutenir la prise de décision opérationnelle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020</span>
+                            <h4>Agent commercial immobilier — Orpi</h4>
+                            <p>En tant qu’agent commercial immobilier, j’ai analysé des données
+                                de marché pour estimer les biens et identifier les tendances
+                                locales</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2016 – 2019</span>
+                            <h4>Apprenti ingénieur génie civil — École Cesi / Entreprise Balestra Génie civil</h4>
+                            <p>Analyse et structuration de données techniques et financières pour
+                                le chiffrage, la planification et le suivi de projets, incluant budgets
+                                prévisionnels, appels d’offres et coordination opérationnelle</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Compétences -->
+            <div class="section-block">
+                <h3 class="section-title">Compétences techniques</h3>
+                <div class="skills-container">
+                    <div class="skills-categorical-grid">
+
+                        <!-- 1. Langages & Programmation -->
+                        <div class="skill-category-card">
+                            <h3>Langages & Programmation</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-lang">Python</span>
+                                <span class="skill-pill pill-lang">SQL</span>
+                                <span class="skill-pill pill-lang">Bash</span>
+                                <span class="skill-pill pill-lang">Git</span>
+                                <span class="skill-pill pill-tool">GitHub</span>
+                            </div>
+                        </div>
+
+                        <!-- 2. Analyse & Manipulation -->
+                        <div class="skill-category-card">
+                            <h3>Analyse & Manipulation</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-lib">Pandas</span>
+                                <span class="skill-pill pill-lib">NumPy</span>
+                                <span class="skill-pill pill-meth">Data Cleaning</span>
+                                <span class="skill-pill pill-meth">EDA</span>
+                                <span class="skill-pill pill-meth">Feature Engineering</span>
+                                <span class="skill-pill pill-meth">Data Validation</span>
+                            </div>
+                        </div>
+
+                        <!-- 3. Base de données -->
+                        <div class="skill-category-card">
+                            <h3>Base de données</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-tool">MySQL</span>
+                                <span class="skill-pill pill-tool">PostgreSQL</span>
+                                <span class="skill-pill pill-tool">SQLite</span>
+                                <span class="skill-pill pill-meth">Schéma relationnel</span>
+                                <span class="skill-pill pill-meth">Vues SQL</span>
+                                <span class="skill-pill pill-meth">Window functions</span>
+                                <span class="skill-pill pill-meth">Optimisation requêtes</span>
+                            </div>
+                        </div>
+
+                        <!-- 4. BI & Visualisation -->
+                        <div class="skill-category-card">
+                            <h3>BI & Visualisation</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-tool">Power BI</span>
+                                <span class="skill-pill pill-meth">DAX</span>
+                                <span class="skill-pill pill-meth">Data Modeling</span>
+                                <span class="skill-pill pill-lib">Matplotlib</span>
+                                <span class="skill-pill pill-lib">Seaborn</span>
+                                <span class="skill-pill pill-lib">Streamlit</span>
+                                <span class="skill-pill pill-tool">Tableau</span>
+                            </div>
+                        </div>
+
+                        <!-- 5. Machine Learning -->
+                        <div class="skill-category-card">
+                            <h3>Machine Learning</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-lib">Scikit-learn</span>
+                                <span class="skill-pill pill-meth">Nearest Neighbors</span>
+                                <span class="skill-pill pill-meth">Classification</span>
+                                <span class="skill-pill pill-meth">Régression</span>
+                                <span class="skill-pill pill-meth">Clustering</span>
+                                <span class="skill-pill pill-meth">Cross-validation</span>
+                                <span class="skill-pill pill-meth">GridSearch</span>
+                            </div>
+                        </div>
+
+                        <!-- 6. Data Engineering (fondamentaux) -->
+                        <div class="skill-category-card">
+                            <h3>Data Engineering (fondamentaux)</h3>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-meth">ETL / ELT</span>
+                                <span class="skill-pill pill-meth">Pipelines</span>
+                                <span class="skill-pill pill-tool">dbt</span>
+                                <span class="skill-pill pill-tool">GCP</span>
+                                <span class="skill-pill pill-meth">APIs REST</span>
+                                <span class="skill-pill pill-meth">Qualité des données</span>
+                                <span class="skill-pill pill-meth">Notions Docker</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Legend -->
+                    <div class="skills-legend">
+                        <div class="legend-item"><span class="legend-dot" style="background: var(--clr-lang)"></span>
+                            Langage</div>
+                        <div class="legend-item"><span class="legend-dot" style="background: var(--clr-lib)"></span>
+                            Librairie & Framework</div>
+                        <div class="legend-item"><span class="legend-dot" style="background: var(--clr-tool)"></span>
+                            Outil & Logiciel</div>
+                        <div class="legend-item"><span class="legend-dot" style="background: var(--clr-meth)"></span>
+                            Méthode & Concept</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ══════════ TAB : PROJETS ══════════ -->
+        <section class="tab" id="tab-projets">
+
+            <div class="section-header">
+                <h2 class="page-title">Mes Projets</h2>
+                <p class="page-sub">Une sélection de mes réalisations en analyse de données.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Projet 1 : Toys & Models -->
+                <article class="project-card">
+                    <div class="project-tag">SQL · DAX · Power BI</div>
+                    <h3>Analyse des ventes Toys &amp; Models</h3>
+                    <p>Le projet Toys and Models consiste à exploiter des données commerciales avec MySQL, DAX et Power
+                        BI afin de modéliser les informations, créer des indicateurs de performance et concevoir des
+                        tableaux de bord interactifs pour analyser les ventes et soutenir la prise de décision.</p>
+                    <div class="project-footer">
+                        <div class="project-chips">
+                            <span class="chip">MySQL</span>
+                            <span class="chip">DAX</span>
+                            <span class="chip">Power BI</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="ecommerce">Voir →</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 : Recommandations de films ML -->
+                <article class="project-card">
+                    <div class="project-tag">Python · Machine Learning</div>
+                    <h3>Système de recommandation de films</h3>
+                    <p>Un cinéma de la Creuse souhaite se digitaliser en développant un site web intégrant un outil
+                        d’analyse et de recommandation de films basé sur IMDb et TMDB.</p>
+                    <div class="project-footer">
+                        <div class="project-chips">
+                            <span class="chip">Python</span>
+                            <span class="chip">Scikit-learn</span>
+                            <span class="chip">Streamlit</span>
+                            <span class="chip">Pandas</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="movies">Voir →</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 : Coming Soon -->
+                <article class="project-card project-card--coming-soon">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <span class="coming-soon-label">COMING SOON</span>
+                        <p class="coming-soon-sub">Un nouveau projet est en cours de préparation.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ══════════ TAB : CONTACT ══════════ -->
+        <section class="tab" id="tab-contact">
+
+            <div class="section-header">
+                <h2 class="page-title">Me Contacter</h2>
+                <p class="page-sub">En recherche d'une alternance en Data Engineer.</p>
+            </div>
+
+            <div class="contact-layout">
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="antonio.balestrapro@gmail.com"
+                                class="contact-value">antonio.balestrapro@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/antonio-balestra/" target="_blank"
+                                class="contact-value">linkedin.com/in/antonio-balestra</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Localisation</span>
+                            <span class="contact-value">Maroeuil(62), France · Remote OK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-availability">
+                    <div class="avail-dot"></div>
+                    <p><strong>En recherche d'alternance</strong></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ───── FOOTER ───── -->
+    <footer class="footer">
+        <p>© 2026 Antonio Balestra · Futur Data Engineer</p>
+    </footer>
+
+    <!-- ─────  MODAL PROJET ───── -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-dialog" id="modal-panel">
+
+            <!-- En-tête fixe -->
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <div class="modal-tag" id="modal-tag"></div>
+                    <h2 class="modal-title" id="modal-title"></h2>
+                </div>
+                <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+            </div>
+
+            <!-- Corps scrollable -->
+            <div class="modal-body">
+
+                <!-- Description courte -->
+                <p class="modal-desc" id="modal-desc"></p>
+                <div id="modal-desc-links" class="modal-desc-links"></div>
+
+                <!-- Détail en 3 colonnes -->
+                <div class="modal-sections">
+                    <div class="modal-section">
+                        <h4>Objectif</h4>
+                        <p id="modal-objectif"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h4>Méthodologie</h4>
+                        <p id="modal-methodo"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h4>Résultats</h4>
+                        <p id="modal-resultats"></p>
+                    </div>
+                </div>
+
+                <!-- Sections enrichies dynamiques (contexte, outils, apports, compétences) -->
+                <div id="modal-extra-sections" class="modal-extra-sections"></div>
+
+                <!-- Galerie médias : images + code — positionnée après les sections textuelles -->
+                <div class="modal-gallery" id="modal-gallery"></div>
+
+                <!-- Pied : chips + bouton GitHub -->
+                <div class="modal-footer">
+                    <div class="modal-chips" id="modal-chips"></div>
+                </div>
+
+            </div><!-- /modal-body -->
+        </div><!-- /modal-dialog -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

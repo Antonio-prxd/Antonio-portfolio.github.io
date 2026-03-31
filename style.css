@@ -682,6 +682,20 @@ body {
     line-height: 1.5;
 }
 
+/* ── BADGE WIP (En cours) ── */
+.badge-wip {
+    display: inline-block;
+    font-size: .65rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 50px;
+    background: rgba(251, 146, 60, 0.12);
+    color: #d97706;
+    border: 1px solid rgba(251, 146, 60, 0.3);
+    letter-spacing: .4px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
 
 .contact-layout {
     display: flex;

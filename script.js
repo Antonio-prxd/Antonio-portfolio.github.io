@@ -737,6 +737,29 @@ GROUP BY 1 ORDER BY 1;`,
       },
     },
   },
+  exoplanetes: {
+    tag: 'Python · dbt · GCP · Power BI · ML',
+    title: 'Projet Exoplanètes – NASA',
+    desc: 'Collecte et traitement de données NASA sur les exoplanètes, modélisation OLAP en étoile, tableaux de bord Power BI et modèle de Machine Learning pour prédire le potentiel d\'habitabilité.',
+
+    contexte: 'Ce projet exploite les données publiques de la NASA sur les exoplanètes découvertes afin d\'en extraire des insights et de développer un modèle prédictif d\'habitabilité. Il couvre l\'ensemble de la chaîne data : de la collecte brute jusqu\'à la visualisation et l\'intelligence artificielle.',
+    objectif: 'Construire un pipeline data complet (collecte → transformation → modélisation → visualisation → ML) autour des données exoplanètes de la NASA, et prédire le potentiel d\'habitabilité de chaque exoplanète grâce au Machine Learning.',
+    outils: ['Python', 'dbt', 'GCP (BigQuery)', 'Power BI', 'Scikit-learn', 'Pandas', 'SQL'],
+    methodo: '<ul><li>Collecte et préparation de données issues des archives NASA.</li><li>Transformation et structuration des données avec dbt et GCP (BigQuery).</li><li>Conception d\'un modèle OLAP en étoile pour l\'analyse multidimensionnelle.</li><li>Création de visualisations et tableaux de bord interactifs avec Power BI.</li><li>Développement d\'un modèle de Machine Learning pour prédire le potentiel d\'habitabilité des exoplanètes.</li></ul>',
+    apports: 'Un pipeline data end-to-end opérationnel, des dashboards permettant d\'explorer les caractéristiques des exoplanètes et un modèle ML capable d\'identifier les candidates les plus prometteuses pour l\'habitabilité.',
+    competences: [
+      'Data Engineering — Collecte, nettoyage et pipelines de données NASA',
+      'dbt & GCP — Transformation et structuration cloud des données',
+      'Modélisation OLAP — Conception d\'un schéma en étoile pour l\'analyse multidimensionnelle',
+      'Power BI — Création de tableaux de bord et visualisations interactives',
+      'Machine Learning — Modèle de prédiction du potentiel d\'habitabilité (Scikit-learn)',
+    ],
+
+    chips: ['Python', 'dbt', 'GCP', 'BigQuery', 'Power BI', 'Scikit-learn', 'Pandas', 'SQL'],
+    media: {
+      codes: [],
+    },
+  },
 };
 
 // ─── NAVIGATION ONGLETS ───────────────────────────────────────────────────────
